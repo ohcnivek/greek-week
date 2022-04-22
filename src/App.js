@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import { main} from './calls';
+
+main()
+
 
 function App() {
   return (
