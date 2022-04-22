@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import { main} from './calls';
 import { useState } from "react";
 
