@@ -1,27 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import { main} from './calls';
+import { useState } from "react";
 
 main()
 
-
 function App() {
+  const timeTill5 = useState(new Date().toLocaleTimeString());
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-screen h-screen text-white bg-black flex items-center justify-center">
+      <div>{timeTill5}</div>
     </div>
   );
 }
