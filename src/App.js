@@ -1,3 +1,6 @@
+import logo from './logo.svg';
+import './App.css';
+import { main} from './calls';
 import { useState } from "react";
 
 const DARK_BACKGROUND = "rgba(0,0,0,0.5)";
@@ -5,6 +8,8 @@ const CONTAINER_STYLE = "p-5 rounded-xl max-w-xl";
 
 const DESCRIPTION =
   "Regardless of the various cultural and religious backgrounds that Tech students come from, once they get off of work (school) they can come together, by the ideology that it is five o’clock somewhere, and enjoy each other’s company";
+
+main()
 
 function App() {
   const timeTill5 = useState(new Date().toLocaleTimeString());
